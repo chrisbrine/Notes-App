@@ -1,0 +1,21 @@
+.header {
+  color: $brand_secondary_color;
+  background-color: $brand_color;
+  font-size: $large_fontsize;
+  height: $header_height;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $small_screen_width) {
+      padding: $wrapper_padding;
+    }
+  }
+  h1 {
+    cursor: default;
+  }
+  h2 {
+    cursor: default;
+    font-size: $primary_fontsize;
+  }
+}

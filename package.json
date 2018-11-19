@@ -1,0 +1,35 @@
+{
+  "name": "notes-app",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --driver-package=cultofcoders:mocha"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "bcrypt": "^3.0.2",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1",
+    "simpl-schema": "^1.5.3"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    }
+  },
+  "devDependencies": {
+    "chai-spies": "^1.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "expect": "^23.6.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/imports/test/setup.js"
+  }
+}

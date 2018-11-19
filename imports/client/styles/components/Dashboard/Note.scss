@@ -1,0 +1,34 @@
+.note {
+  margin-left: 2rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-grow: 1;
+  border: 1px solid $secondary_color;
+  background-color: $primary_bgcolor;
+  color: $primary_color;
+  height: $notes_height;
+  flex-direction: column;
+  .note__title, .note__body {
+    margin-bottom: 2rem;
+    font-size: $big_fontsize;
+    border: 1px solid $secondary_color;
+  }
+  .note__title {
+    padding: 0.5rem;
+    height: $note_title_height;
+    border: 0px;
+    border-bottom: 1px solid $secondary_color;
+  }
+  .note__body {
+    flex-grow: 1;
+    padding: 1rem;
+    resize: none;
+  }
+  @media screen and (max-width: $small_screen_width) {
+    margin-left: 0rem;
+    height: $notes_mobile_height;
+    &.hidden {
+      // display: none;
+    }
+  }
+}

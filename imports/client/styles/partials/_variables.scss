@@ -1,0 +1,46 @@
+// Colors
+$brand_color: #397AB1;
+$brand_secondary_color: white;
+$primary_color: #333333;
+$primary_color_alt: lighten($primary_color, 15%);
+$primary_bgcolor: white;
+$secondary_color: #777777;
+$secondary_bgcolor: #F9F9F9;
+
+// Fonts
+$primary_font: Helvetica, Arial, sans-serif;
+$primary_fontsize: 1.5rem;
+$primary_weight: 400;
+$secondary_fontsize: 1.4rem;
+$secondary_weight: 200;
+$big_fontsize: 1.7rem;
+$large_fontsize: 1.9rem;
+$large_weight: 600;
+$small_fontsize: 1.2rem;
+
+// Buttons
+$primary_button_fontsize: 1.4rem;
+$primary_button_weight: 600;
+$primary_button_bgcolor: $brand_color;
+$primary_button_color: $brand_secondary_color;
+$secondary_button_bgcolor: $secondary_bgcolor;
+$secondary_button_color: $primary_color;
+$secondary_button_weight: 800;
+$large_button_fontsize: 1.6rem;
+$larger_button_fontsize: 2rem;
+
+// Wrapper
+$wrapper_padding: 2rem;
+$wrapper_maxwidth: 100rem;
+
+// Element Sizes
+$header_height: 8rem;
+$body_height: calc(100vh);
+$notes_height: calc(100vh - 16rem - 4px);
+$notes_mobile_height: calc(100vh - 11.8rem - 4px);
+$notelist_width: 30%;
+$notelist_minwidth: 25rem;
+$note_title_height: 3rem;
+
+// Screen Sizes
+$small_screen_width: 50rem;

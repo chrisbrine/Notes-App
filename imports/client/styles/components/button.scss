@@ -1,0 +1,75 @@
+.button {
+  border: 1px solid darken($primary_button_color, 15%);
+  background: $primary_button_bgcolor;
+  color: $primary_button_color;
+  padding: 1rem 1rem;
+  font-weight: $primary_button_weight;
+  cursor: pointer;
+  outline: none;
+  transition: background .5s ease, transform .5s ease, color .5s ease;
+  text-decoration: none;
+  font-size: $primary_button_fontsize;
+  font-weight: $primary_button_weight;
+  &:hover {
+    background: darken($primary_button_bgcolor, 5%);
+  }
+  &:active {
+    background: darken($primary_button_bgcolor, 15%);
+    transform: scale(1.1);
+  }
+  &.button--secondary {
+    background: $secondary_button_bgcolor;
+    border-color: $secondary_button_color;
+    color: $secondary_button_color;
+    &:active {
+      background: darken($secondary_button_bgcolor, 5%);
+    }
+    &:hover {
+      background: darken($secondary_button_bgcolor, 15%);
+    }
+  }
+  &.button--transparent {
+    color: $brand_secondary_color;
+    border-color: $brand_secondary_color;
+    background: transparent;
+    &:hover {
+      border-color: darken($brand_secondary_color, 10%);
+      color: darken($brand_secondary_color, 10%);
+    }
+    &:active {
+      border-color: darken($brand_secondary_color, 25%);
+      color: darken($brand_secondary_color, 25%);
+    }
+  }
+  &.button--noborder {
+    border: 0px;
+  }
+  &.button--large {
+    font-size: $large_button_fontsize;
+  }
+  &.button--larger {
+    font-size: $larger_button_fontsize;
+  }
+  &.button--bold {
+    font-weight: $secondary_button_weight;
+  }
+  &.button--spacebetween {
+    margin: 0 1rem;
+  }
+  &.button--spacebetweenalt {
+    margin: 1rem 0;
+  }
+  &.button--spacearound {
+    margin: 1rem;
+  }
+  &.button--fullwidth {
+    display: block;
+    width: 100%;
+  }
+  &.button--hideonlarge {
+    display: none;
+    @media screen and (max-width: $small_screen_width) {
+      display: inline-block;
+    }
+  }
+}

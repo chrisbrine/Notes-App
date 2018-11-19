@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 67.5%;
+  color: $primary_color;
+  font-family: $primary_font;
+  font-weight: $primary_weight;
+}
+
+body {
+  font-size: $primary_fontsize;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: $wrapper_maxwidth;
+  padding: $wrapper_padding;
+  @media screen and (max-width: $small_screen_width) {
+    max-width: inherit;
+    padding: 0;
+  }
+}

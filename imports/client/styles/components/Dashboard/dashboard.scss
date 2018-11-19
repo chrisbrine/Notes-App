@@ -1,0 +1,10 @@
+.dashboard {
+  background-color: $secondary_bgcolor;
+  height: $body_height;
+  .wrapper {
+    display: flex;
+    @import './NoteListHeader';
+    @import './NoteList';
+    @import './Note';
+  }
+}
