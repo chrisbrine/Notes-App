@@ -8,7 +8,9 @@
   min-width: $notelist_minwidth;
   height: $notes_height;
   overflow: hidden;
+  z-index: 100;
   .notelist__notes {
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     overflow-y: scroll;
     height: 100%;
