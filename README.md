@@ -6,6 +6,16 @@ This is a note taking application that works with Meteor, React, SCSS, and Mongo
 
 Upon downloading, make sure that meteor is installed and then run:
 
+```
 meteor npm install
+```
 
 Then you are good to go!
+
+# Running the application
+
+Just run meteor in the directory by typing:
+
+```
+meteor
+```
